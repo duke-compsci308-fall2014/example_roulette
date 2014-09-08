@@ -7,10 +7,8 @@ import roulette.Game;
  * 
  * @author Robert C. Duvall
  */
-public class Main
-{
-    public static void main (String[] args)
-    {
+public class Main {
+    public static void main (String[] args) {
         Game game = new Game();
         Gambler player = new Gambler("Robert", 1000);
 
@@ -18,8 +16,7 @@ public class Main
                            ", let's play " + game.getName());
         System.out.println();
 
-        do
-        {
+        do {
             game.play(player);
         }
         while (player.isSolvent());
